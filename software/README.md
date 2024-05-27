@@ -134,7 +134,7 @@ volumes:
     |------------- |--------------- |
     | 1.fritz.box | 192.168.178.1 |
     | 2.fritz.box | 192.168.178.2 |
-    | 3.fritz.box | 169.168.178.3 |
+    | 3.fritz.box | 192.168.178.3 |
     | fritz.nas | 192.168.178.1 |
 
 -   DNS Settings
@@ -162,11 +162,11 @@ volumes:
 
 ### Grafana & InfluxDB
 
--   TODO
+-   Currently only used to monitor my internet speed, no additional configuration aside from the docker compose needed
 
 ### Speedtest
 
--   TODO
+-   see above
 
 ### Glance
 
