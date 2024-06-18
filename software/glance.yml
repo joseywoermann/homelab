@@ -67,7 +67,6 @@ pages:
                       - url: https://www.theverge.com/rss/index.xml
                         title: The Verge
                       - url: https://www.bleepingcomputer.com/feed/
-                        title: bleeping Computer
                       - url: https://www.tagesschau.de/index~rss2.xml
                         title: Tageschau
                       - url: https://www.tagesschau.de/ausland/index~rss2.xml
@@ -76,6 +75,8 @@ pages:
                         title: Tageschau Finanzen
                       - url: https://www.tagesschau.de/wirtschaft/index~rss2.xml
                         title: Tageschau Wirtschaft
+                      - url: https://frame.work/de/en/blog.rss
+                        title: Framework Blog
 
                 - type: videos
                   channels:
@@ -90,6 +91,9 @@ pages:
                       - UCO2x-p9gg9TLKneXlibGR7w # Snazzy Labs
                       - UCBJycsmduvYEL83R_U4JriQ # MKBHD
                       - UChIs72whgZI9w6d6FhwGGHA # GamersNexus
+                      - UCRYOj4DmyxhBVrdvbsUwmAA # optimum
+                      - UCMPtzN8fnhHLpihCT1QvFZw # cam shand
+                      - UCDiKw3GnFIwyNJBzhCoRI-Q # Framework
 
                 - type: reddit
                   subreddit: selfhosted
