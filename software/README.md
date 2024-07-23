@@ -145,7 +145,11 @@ volumes:
 
 ### Jellyfin
 
--   TODO
+-   Local Media Server
+-   Currently serving:
+    -   34 movies
+    -   940 episodes
+    -   12675 songs
 
 ### Nginx Proxy Manager
 
