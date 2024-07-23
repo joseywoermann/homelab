@@ -56,6 +56,13 @@ pages:
 
           - size: full
             widgets:
+                - type: search
+                  search-engine: https://google.com/search?q={QUERY}&udm=14
+                  bangs:
+                    - title: YouTube
+                      shortcut: "!yt"
+                      url: https://www.youtube.com/results?search_query={QUERY}
+
                 - type: rss
                   style: vertical-list
                   limit: 50
@@ -78,6 +85,9 @@ pages:
                       - url: https://frame.work/de/en/blog.rss
                         title: Framework Blog
 
+                - type: reddit
+                  subreddit: selfhosted
+
                 - type: videos
                   channels:
                       - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
@@ -95,12 +105,10 @@ pages:
                       - UCMPtzN8fnhHLpihCT1QvFZw # cam shand
                       - UCDiKw3GnFIwyNJBzhCoRI-Q # Framework
 
-                - type: reddit
-                  subreddit: selfhosted
-
           - size: small
             widgets:
                 - type: weather
+                  hour-format: 24h
                   location: Halle, North Rhine-Westphalia, Germany
 
                 - type: stocks
@@ -119,5 +127,3 @@ pages:
                         name: Microsoft
                       - symbol: GOOGL
                         name: Google
-                      - symbol: AMD
-                        name: AMD

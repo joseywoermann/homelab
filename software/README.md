@@ -102,7 +102,7 @@ volumes:
 
 -   Custom DNS-Server
 -   Network-wide ad blocking & malicious site protection
--   total of 1,821,392 blocked domains (as of mid-May 2024)
+-   total of 1,852,681 blocked domains (as of mid-July 2024)
 -   used adlists:
 
     -   `https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts`
@@ -134,7 +134,6 @@ volumes:
     |------------- |--------------- |
     | 1.fritz.box | 192.168.178.1 |
     | 2.fritz.box | 192.168.178.2 |
-    | 3.fritz.box | 192.168.178.3 |
     | fritz.nas | 192.168.178.1 |
 
 -   DNS Settings
