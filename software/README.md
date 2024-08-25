@@ -149,7 +149,7 @@ volumes:
 -   Currently serving:
     -   34 movies
     -   940 episodes
-    -   12675 songs
+    -   1915 songs
 
 ### Nginx Proxy Manager
 
