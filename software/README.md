@@ -102,7 +102,7 @@ volumes:
 
 -   Custom DNS-Server
 -   Network-wide ad blocking & malicious site protection
--   total of 1,852,681 blocked domains (as of mid-July 2024)
+-   total of 1,805,456 blocked domains (as of mid-October 2024)
 -   used adlists:
 
     -   `https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts`
@@ -119,6 +119,7 @@ volumes:
 
     -   `https://raw.githubusercontent.com/namePlayer/dhl-scamlist/main/dns-blocklists/pihole-blacklist`
     -   `https://raw.githubusercontent.com/danhorton7/pihole-block-tiktok/main/tiktok.txt`
+    -   `https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/refs/heads/main/noai_hosts.txt`
 
     -   `https://raw.githubusercontent.com/joseywoermann/pihole-blocklists/main/lists/chip/hosts`
     -   `https://raw.githubusercontent.com/joseywoermann/pihole-blocklists/main/lists/temu/hosts`
