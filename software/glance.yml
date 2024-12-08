@@ -42,17 +42,11 @@ pages:
                         links:
                             - title: Reddit
                               url: https://www.reddit.com/
-                            - title: Threads
-                              url: https://threads.net/
-                            - title: Twitter
-                              url: https://twitter.com/
+                            - title: Mastodon
+                              url: https://mastodon.social/
                             - title: Instagram
                               url: https://www.instagram.com/
 
-                - type: twitch-channels
-                  channels:
-                      - chrissyofficial
-                      - niknocturnal
 
           - size: full
             widgets:
@@ -64,6 +58,7 @@ pages:
                       url: https://www.youtube.com/results?search_query={QUERY}
 
                 - type: rss
+                  title: Tech News
                   style: vertical-list
                   limit: 50
                   collapse-after: 5
@@ -74,14 +69,7 @@ pages:
                       - url: https://www.theverge.com/rss/index.xml
                         title: The Verge
                       - url: https://www.bleepingcomputer.com/feed/
-                      - url: https://www.tagesschau.de/index~rss2.xml
-                        title: Tageschau
-                      - url: https://www.tagesschau.de/ausland/index~rss2.xml
-                        title: Tageschau Ausland
-                      - url: https://www.tagesschau.de/wirtschaft/finanzen/index~rss2.xml
-                        title: Tageschau Finanzen
-                      - url: https://www.tagesschau.de/wirtschaft/index~rss2.xml
-                        title: Tageschau Wirtschaft
+                        title: Bleeping Computer
                       - url: https://frame.work/de/en/blog.rss
                         title: Framework Blog
 
@@ -91,7 +79,10 @@ pages:
                 - type: videos
                   channels:
                       - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
+                      - UCzgA9CBrIXPtkB2yNTTiy1w # Level 2 Jeff
+                      - UC4w1YQAJMWOz4qtxinq55LQ # Level1Techs
                       - UCv6J_jJa8GJqFwQNgNrMuww # ServeTheHome
+                      - UCHkYOD-3fZbuGhwsADBd9ZQ # Lawrence Systems
                       - UCOk-gHyjcWZNj3Br4oxwh0A # Techno Tim
                       - UCXuqSBlHAE6Xw-yeJA0Tunw # LTT
                       - UCp3yVOm6A55nx65STpm3tXQ # Craft Computing
@@ -111,6 +102,76 @@ pages:
                   hour-format: 24h
                   location: Halle, North Rhine-Westphalia, Germany
 
+                - type: stocks
+                  stocks:
+                      - symbol: VWCE.DE
+                        name: FTSE All-World
+                      - symbol: INTC
+                        name: Intel
+                      - symbol: BTC-USD
+                        name: Bitcoin
+                      - symbol: NVDA
+                        name: NVIDIA
+                      - symbol: AAPL
+                        name: Apple
+                      - symbol: MSFT
+                        name: Microsoft
+                      - symbol: GOOGL
+                        name: Google
+
+    - name: News
+      columns:
+          - size: small
+            widgets:
+                - type: calendar
+                - type: bookmarks
+                  groups:
+                      - title: Sources (Web)
+                        color: 200 100 50
+                        links:
+                            - title: Tagesschau
+                              url: https://www.tagesschau.de
+                            - title: AP News
+                              url: https://apnews.com/
+                            - title: Reuters
+                              url: https://www.reuters.com/
+                            - title: Ground News
+                              url: https://ground.news/
+
+                      - title: Sources (Video)
+                        color: 0 100 50
+                        links:
+                            - title: TLDR Daily
+                              url: https://nebula.tv/thedailybriefing
+                            - title: TLDR News EU
+                              url: https://nebula.tv/tldrnewseu
+                            - title: TLDR News Global
+                              url: https://nebula.tv/tldrnewsglobal
+                            - title: TLDR News UK
+                              url: https://nebula.tv/tldrnewsuk
+                            - title: The Philip DeFranco Show
+                              url: https://www.youtube.com/@PhilipDeFranco
+
+
+          - size: full
+            widgets:
+                - type: rss
+                  title: News
+                  style: detailed-list
+                  limit: 200
+                  collapse-after: 50
+                  cache: 1h
+                  feeds:
+                      - url: https://www.tagesschau.de/inland/innenpolitik/index~rss2.xml
+                        title: Tagesschau Innenpolitik
+                      - url: https://www.tagesschau.de/ausland/index~rss2.xml
+                        title: Tagesschau Ausland
+                      - url: https://www.tagesschau.de/wirtschaft/index~rss2.xml
+                        title: Tagesschau Wirtschaft
+#                      - url: https://news.google.com/rss/search?q=when:24h+allinurl:apnews.com&hl=en-US&gl=US&ceid=US:en
+#                        title: AP News
+          - size: small
+            widgets:
                 - type: stocks
                   stocks:
                       - symbol: VWCE.DE
