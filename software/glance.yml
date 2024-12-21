@@ -17,7 +17,7 @@ pages:
 
                       - links:
                             - title: Calendar
-                              url: https://calendar.google.com/calendar/u/0/r
+                              url: https://cloud.josey.dev/apps/calendar/timeGridWeek/now
                             - title: Amazon
                               url: https://www.amazon.de/
                             - title: Github
