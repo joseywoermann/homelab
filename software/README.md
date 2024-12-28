@@ -25,7 +25,8 @@
     -   `https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts`
 
     -   `https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Win10Telemetry`
-
+    -   `https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/samsung`
+    -   `https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Fake-Science`
     -   `https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/DomainSquatting/DE/sonstige_Banken/Sparda-Bank`
     -   `https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/DomainSquatting/DE/sonstige_Banken/VolkswagenBank`
     -   `https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/DomainSquatting/DE/Volks-und-Raiffeisenbank/VR-PLZ-3-Teil-1`
