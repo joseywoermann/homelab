@@ -62,7 +62,7 @@ pages:
                       - url: https://www.jeffgeerling.com/blog.xml
                         title: Jeff Geerling
                       - url: https://www.citationneeded.news/rss/
-                        title: \[citation needed\]
+                        title: [citation needed]
 
           - size: small
             widgets:
