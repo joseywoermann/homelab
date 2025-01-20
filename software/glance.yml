@@ -3,8 +3,103 @@ pages:
       columns:
           - size: small
             widgets:
-                - type: calendar
+              - type: weather
+                hour-format: 24h
+                location: Halle, North Rhine-Westphalia, Germany
 
+              - type: bookmarks
+                groups:
+                      - title: Homelab
+                        links:
+                            - title: Pi-Hole
+                              url: https://dns.home.josey.dev
+                            - title: Grafana
+                              url: https://grafana.home.josey.dev
+                            - title: Nginx Proxy Manager
+                              url: https://home.josey.dev
+
+                      - links:
+                            - title: Calendar
+                              url: https://cloud.josey.dev/apps/calendar/timeGridWeek/now
+                            - title: Github
+                              url: https://github.com/
+                            - title: Wikipedia
+                              url: https://en.wikipedia.org/
+                            - title: Geizhals
+                              url: https://geizhals.de/
+
+                      - title: Entertainment
+                        color: 10 70 50
+                        links:
+                            - title: YouTube
+                              url: https://www.youtube.com/
+                            - title: Nebula
+                              url: https://nebula.tv/
+                            - title: Jellyfin
+                              url: https://jellyfin.home.josey.dev/
+
+                      - title: Social
+                        color: 200 50 50
+                        links:
+                            - title: Reddit
+                              url: https://www.reddit.com/
+                            - title: Mastodon
+                              url: https://mastodon.social/
+
+          - size: full
+            widgets:
+                - type: rss
+                  title: News
+                  style: detailed-list
+                  limit: 200
+                  collapse-after: 50
+                  cache: 1h
+                  feeds:
+                      - url: https://www.theindex.media/rss/
+                        title: The Index.
+                      - url: https://www.joanwestenberg.com/feed/
+                        title: Westenberg.
+                      - url: https://www.jeffgeerling.com/blog.xml
+                        title: Jeff Geerling
+                      - url: https://www.citationneeded.news/rss/
+                        title: \[citation needed\]
+
+          - size: small
+            widgets:
+                 - type: calendar
+ 
+                 - type: clock
+                   hour-format: 24h
+                   timezones:
+                      - timezone: America/Los_Angeles
+                        label: Los Angeles
+                      - timezone: America/New_York
+                        label: New York
+                      - timezone: Etc/UTC
+                        label: UTC
+                      - timezone: Europe/London
+                        label: London
+                      - timezone: Europe/Berlin
+                        label: Berlin
+                      - timezone: Europe/Moscow
+                        label: Moscow
+                      - timezone: Asia/Dubai
+                        label: Dubai
+                      - timezone: Asia/Kolkata
+                        label: New Dehli
+                      - timezone: Asia/Singapore
+                        label: China / Singapore
+                      - timezone: Asia/Tokyo
+                        label: Tokyo
+                      - timezone: Australia/Sydney
+                        label: Sydney
+                      - timezone: Pacific/Auckland
+                        label: Auckland
+
+    - name: Tech
+      columns:
+          - size: small
+            widgets:
                 - type: bookmarks
                   groups:
                       - links:
@@ -44,24 +139,21 @@ pages:
                               url: https://www.reddit.com/
                             - title: Mastodon
                               url: https://mastodon.social/
-                            - title: Instagram
-                              url: https://www.instagram.com/
-
 
           - size: full
             widgets:
                 - type: search
-                  search-engine: https://google.com/search?q={QUERY}&udm=14
+                  search-engine: https://duckduckgo.com/?q={QUERY}
                   bangs:
-                    - title: YouTube
-                      shortcut: "!yt"
-                      url: https://www.youtube.com/results?search_query={QUERY}
+                      - title: YouTube
+                        shortcut: "!yt"
+                        url: https://www.youtube.com/results?search_query={QUERY}
 
                 - type: rss
                   title: Tech News
                   style: vertical-list
                   limit: 50
-                  collapse-after: 5
+                  collapse-after: 8
                   cache: 3h
                   feeds:
                       - url: https://www.gsmarena.com/rss-news-reviews.php3
@@ -72,9 +164,19 @@ pages:
                         title: Bleeping Computer
                       - url: https://frame.work/de/en/blog.rss
                         title: Framework Blog
+                      - url: https://noyb.eu/en/rss
+                        title: noyb
+                - type: group
+                  widgets:
+                    - type: reddit
+                      subreddit: selfhosted
+                    - type: reddit
+                      subreddit: homelab
+                    - type: reddit
+                      subreddit: DataHoarder
+                    - type: reddit
+                      subreddit: de_EDV
 
-                - type: reddit
-                  subreddit: selfhosted
 
                 - type: videos
                   channels:
@@ -90,7 +192,6 @@ pages:
                       - UCSOpcUkE-is7u7c4AkLgqTw # MrMobile
                       - UCMiJRAwDNSNzuYeN2uWa0pA # MrWhosetheboss
                       - UCO2x-p9gg9TLKneXlibGR7w # Snazzy Labs
-                      - UCBJycsmduvYEL83R_U4JriQ # MKBHD
                       - UChIs72whgZI9w6d6FhwGGHA # GamersNexus
                       - UCRYOj4DmyxhBVrdvbsUwmAA # optimum
                       - UCMPtzN8fnhHLpihCT1QvFZw # cam shand
@@ -98,10 +199,7 @@ pages:
 
           - size: small
             widgets:
-                - type: weather
-                  hour-format: 24h
-                  location: Halle, North Rhine-Westphalia, Germany
-
+                - type: calendar
                 - type: stocks
                   stocks:
                       - symbol: VWCE.DE
@@ -123,7 +221,6 @@ pages:
       columns:
           - size: small
             widgets:
-                - type: calendar
                 - type: bookmarks
                   groups:
                       - title: Sources (Web)
@@ -152,7 +249,6 @@ pages:
                             - title: The Philip DeFranco Show
                               url: https://www.youtube.com/@PhilipDeFranco
 
-
           - size: full
             widgets:
                 - type: rss
@@ -168,10 +264,10 @@ pages:
                         title: Tagesschau Ausland
                       - url: https://www.tagesschau.de/wirtschaft/index~rss2.xml
                         title: Tagesschau Wirtschaft
-#                      - url: https://news.google.com/rss/search?q=when:24h+allinurl:apnews.com&hl=en-US&gl=US&ceid=US:en
-#                        title: AP News
+
           - size: small
             widgets:
+                - type: calendar
                 - type: stocks
                   stocks:
                       - symbol: VWCE.DE
