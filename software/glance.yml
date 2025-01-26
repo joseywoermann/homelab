@@ -63,7 +63,9 @@ pages:
                         title: Jeff Geerling
                       - url: https://www.citationneeded.news/rss/
                         title: "[citation needed]"
-
+                      - url: https://gamersnexus.net/rss.xml
+                        title: GamersNexus
+                        
           - size: small
             widgets:
                  - type: calendar
