@@ -1,3 +1,9 @@
+theme:
+  light: true
+  background-color: 0 0 95
+  primary-color: 0 0 10
+  negative-color: 0 90 50
+
 pages:
     - name: Home
       columns:
@@ -48,8 +54,15 @@ pages:
 
           - size: full
             widgets:
+                - type: search
+                  search-engine: https://www.qwant.com/?q={QUERY}
+                  bangs:
+                      - title: YouTube
+                        shortcut: "!yt"
+                        url: https://www.youtube.com/results?search_query={QUERY}
+                        
                 - type: rss
-                  title: News
+                  title: Blogs
                   style: detailed-list
                   limit: 200
                   collapse-after: 50
@@ -63,8 +76,6 @@ pages:
                         title: Jeff Geerling
                       - url: https://www.citationneeded.news/rss/
                         title: "[citation needed]"
-                      - url: https://gamersnexus.net/rss.xml
-                        title: GamersNexus
                       - url: https://xn--gckvb8fzb.com/index.xml
                         title: マリウス
                       - url: https://solar.lowtechmagazine.com/feeds
@@ -105,89 +116,6 @@ pages:
                       - timezone: Pacific/Auckland
                         label: Auckland
 
-    - name: Tech
-      columns:
-          - size: full
-            widgets:
-                - type: search
-                  search-engine: https://www.qwant.com/?q={QUERY}
-                  bangs:
-                      - title: YouTube
-                        shortcut: "!yt"
-                        url: https://www.youtube.com/results?search_query={QUERY}
-
-                - type: rss
-                  title: Tech News
-                  style: vertical-list
-                  limit: 50
-                  collapse-after: 10
-                  cache: 3h
-                  feeds:
-                      - url: https://www.gsmarena.com/rss-news-reviews.php3
-                        title: GSMArena
-                      - url: https://www.theverge.com/rss/index.xml
-                        title: The Verge
-                      - url: https://www.bleepingcomputer.com/feed/
-                        title: Bleeping Computer
-                      - url: https://frame.work/de/en/blog.rss
-                        title: Framework Blog
-                      - url: https://noyb.eu/en/rss
-                        title: noyb
-                - type: group
-                  widgets:
-                    - type: reddit
-                      subreddit: selfhosted
-                    - type: reddit
-                      subreddit: homelab
-                    - type: reddit
-                      subreddit: DataHoarder
-                    - type: reddit
-                      subreddit: de_EDV
-
-
-                - type: videos
-                  channels:
-                      - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
-                      - UCzgA9CBrIXPtkB2yNTTiy1w # Level 2 Jeff
-                      - UC4w1YQAJMWOz4qtxinq55LQ # Level1Techs
-                      - UCv6J_jJa8GJqFwQNgNrMuww # ServeTheHome
-                      - UCHkYOD-3fZbuGhwsADBd9ZQ # Lawrence Systems
-                      - UCOk-gHyjcWZNj3Br4oxwh0A # Techno Tim
-                      - UCXuqSBlHAE6Xw-yeJA0Tunw # LTT
-                      - UCp3yVOm6A55nx65STpm3tXQ # Craft Computing
-                      - UCgdTVe88YVSrOZ9qKumhULQ # Hardware Haven
-                      - UCSOpcUkE-is7u7c4AkLgqTw # MrMobile
-                      - UCMiJRAwDNSNzuYeN2uWa0pA # MrWhosetheboss
-                      - UCO2x-p9gg9TLKneXlibGR7w # Snazzy Labs
-                      - UChIs72whgZI9w6d6FhwGGHA # GamersNexus
-                      - UCRYOj4DmyxhBVrdvbsUwmAA # optimum
-                      - UCMPtzN8fnhHLpihCT1QvFZw # cam shand
-                      - UCDiKw3GnFIwyNJBzhCoRI-Q # Framework
-
-          - size: small
-            widgets:
-                - type: calendar
-                - type: stocks
-                  stocks:
-                      - symbol: DAX
-                        name: DAX
-                      - symbol: MEUD.PA
-                        name: Stoxx Europe 600
-                      - symbol: VWCE.DE
-                        name: FTSE All-World
-                      - symbol: INTC
-                        name: Intel
-                      - symbol: BTC-USD
-                        name: Bitcoin
-                      - symbol: NVDA
-                        name: NVIDIA
-                      - symbol: AAPL
-                        name: Apple
-                      - symbol: MSFT
-                        name: Microsoft
-                      - symbol: GOOGL
-                        name: Google
-
     - name: News
       columns:
           - size: small
@@ -220,22 +148,135 @@ pages:
                             - title: The Philip DeFranco Show
                               url: https://www.youtube.com/@PhilipDeFranco
 
+                      
           - size: full
             widgets:
-                - type: rss
-                  title: News
-                  style: detailed-list
-                  limit: 200
-                  collapse-after: 50
-                  cache: 1h
-                  feeds:
-                      - url: https://www.tagesschau.de/inland/innenpolitik/index~rss2.xml
-                        title: Tagesschau Innenpolitik
-                      - url: https://www.tagesschau.de/ausland/index~rss2.xml
-                        title: Tagesschau Ausland
-                      - url: https://www.tagesschau.de/wirtschaft/index~rss2.xml
-                        title: Tagesschau Wirtschaft
+                - type: group
+                  widgets:
+                    - type: rss
+                      title: Tagesschau
+                      style: detailed-list
+                      limit: 50
+                      collapse-after: 50
+                      cache: 1h
+                      feeds:
+                        - url: https://www.tagesschau.de/inland/innenpolitik/index~rss2.xml
+                          title: Tagesschau Innenpolitik
+                        - url: https://www.tagesschau.de/ausland/index~rss2.xml
+                          title: Tagesschau Ausland
+                        - url: https://www.tagesschau.de/wirtschaft/index~rss2.xml
+                          title: Tagesschau Wirtschaft
+                    - type: rss
+                      title: BBC
+                      style: detailed-list
+                      limit: 50
+                      collapse-after: 50
+                      cache: 1h
+                      feeds:
+                        - url: https://feeds.bbci.co.uk/news/world/rss.xml
+                          title: BBC World
+
+                    - type: rss
+                      title: AP
+                      style: detailed-list
+                      limit: 50
+                      collapse-after: 50
+                      cache: 1h
+                      feeds:
+                        - url: https://news.google.com/rss/search?q=when:24h+allinurl:apnews.com&hl=en-US&gl=US&ceid=US:en
+                          title: AP News
+
+                    - type: reddit
+                      subreddit: worldnews
+                      show-thumbnails: true
+                      limit: 20
+                      collapse-after: 15
+                    - type: reddit
+                      subreddit: news
+                      show-thumbnails: true
+                      limit: 20
+                      collapse-after: 15
+                    - type: reddit
+                      subreddit: europe
+                      show-thumbnails: true
+                      limit: 20
+                      collapse-after: 15
+                    - type: reddit
+                      subreddit: de
+                      show-thumbnails: true
+                      limit: 20
+                      collapse-after: 15
+
+
 
           - size: small
             widgets:
                 - type: calendar
+                - type: stocks
+                  stocks:
+                      - symbol: VWCE.DE
+                        name: FTSE All-World
+                      - symbol: MEUD.PA
+                        name: Stoxx EU600
+                      - symbol: DAX
+                        name: DAX
+
+    - name: Tech
+      columns:
+          - size: full
+            widgets:
+                - type: rss
+                  title: Tech News
+                  style: vertical-list
+                  limit: 50
+                  collapse-after: 20
+                  cache: 3h
+                  feeds:
+                      - url: https://www.gsmarena.com/rss-news-reviews.php3
+                        title: GSMArena
+                      - url: https://www.theverge.com/rss/index.xml
+                        title: The Verge
+                      - url: https://www.bleepingcomputer.com/feed/
+                        title: Bleeping Computer
+                      - url: https://frame.work/de/en/blog.rss
+                        title: Framework Blog
+                      - url: https://gamersnexus.net/rss.xml
+                        title: GamersNexus
+                      - url: https://noyb.eu/en/rss
+                        title: noyb
+
+
+                - type: videos
+                  channels:
+                      - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
+                      - UCzgA9CBrIXPtkB2yNTTiy1w # Level 2 Jeff
+                      - UC4w1YQAJMWOz4qtxinq55LQ # Level1Techs
+                      - UCv6J_jJa8GJqFwQNgNrMuww # ServeTheHome
+                      - UCHkYOD-3fZbuGhwsADBd9ZQ # Lawrence Systems
+                      - UCOk-gHyjcWZNj3Br4oxwh0A # Techno Tim
+                      - UCXuqSBlHAE6Xw-yeJA0Tunw # LTT
+                      - UCp3yVOm6A55nx65STpm3tXQ # Craft Computing
+                      - UCgdTVe88YVSrOZ9qKumhULQ # Hardware Haven
+                      - UCSOpcUkE-is7u7c4AkLgqTw # MrMobile
+                      - UCMiJRAwDNSNzuYeN2uWa0pA # MrWhosetheboss
+                      - UCO2x-p9gg9TLKneXlibGR7w # Snazzy Labs
+                      - UChIs72whgZI9w6d6FhwGGHA # GamersNexus
+                      - UCRYOj4DmyxhBVrdvbsUwmAA # optimum
+                      - UCMPtzN8fnhHLpihCT1QvFZw # cam shand
+                      - UCDiKw3GnFIwyNJBzhCoRI-Q # Framework
+
+          - size: small
+            widgets:
+                - type: monitor
+                  cache: 1m
+                  title: Services
+                  sites:
+                    - title: Jellyfin
+                      url: https://jellyfin.home.josey.dev/
+                      icon: si:jellyfin
+                    - title: Pi-hole
+                      url: https://dns.home.josey.dev/admin/login
+                      icon: si:pihole
+                    - title: Grafana
+                      url: https://grafana.home.josey.dev
+                      icon: si:grafana
