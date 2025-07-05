@@ -68,9 +68,7 @@ pages:
                   collapse-after: 50
                   cache: 1h
                   feeds:
-                      - url: https://www.theindex.media/rss/
-                        title: The Index.
-                      - url: https://www.joanwestenberg.com/feed/
+                      - url: https://rss.beehiiv.com/feeds/IDFzfYwUH1.xml
                         title: Westenberg.
                       - url: https://www.jeffgeerling.com/blog.xml
                         title: Jeff Geerling
@@ -78,7 +76,7 @@ pages:
                         title: "[citation needed]"
                       - url: https://xn--gckvb8fzb.com/index.xml
                         title: マリウス
-                      - url: https://solar.lowtechmagazine.com/feeds
+                      - url: https://solar.lowtechmagazine.com/posts/index.xml
                         title: LOW←TECH MAGAZINE
                       - url: https://adamthiede.com/rss.xml
                         title: Adam Thiede's blog
