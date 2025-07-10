@@ -61,8 +61,11 @@ services:
       - ./jellyfin/tvshows:/data/tvshows
       - ./jellyfin/movies:/data/movies
       - ./jellyfin/shortfilms:/data/shortfilms
-      - ./jellyfin/Musik:/data/music
       - ./jellyfin/Sport:/data/sport
+      - ./jellyfin/music:/data/music
+    ports:
+      - 8096:8096
+      - 8920:8920
     devices:
       - /dev/dri/card0:/dev/dri/card0
       - /dev/dri/renderD128:/dev/dri/renderD128
@@ -71,12 +74,13 @@ services:
   glance:
     image: glanceapp/glance
     volumes:
-      - ./glance/glance.yml:/app/glance.yml
+      - ./glance/config:/app/config
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
       - 8080:8080
     restart: unless-stopped
+
 
 volumes:
   grafana:
