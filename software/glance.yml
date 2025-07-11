@@ -60,7 +60,7 @@ pages:
                       - title: YouTube
                         shortcut: "!yt"
                         url: https://www.youtube.com/results?search_query={QUERY}
-                        
+
                 - type: rss
                   title: Blogs
                   style: detailed-list
@@ -124,7 +124,7 @@ pages:
                         color: 200 100 50
                         links:
                             - title: Tagesschau
-                              url: https://www.tagesschau.de
+                              url: https://www.tagesschau.de/
                             - title: AP News
                               url: https://apnews.com/
                             - title: Reuters
@@ -146,7 +146,6 @@ pages:
                             - title: The Philip DeFranco Show
                               url: https://www.youtube.com/@PhilipDeFranco
 
-                      
           - size: full
             widgets:
                 - type: group
@@ -176,7 +175,7 @@ pages:
 
                     - type: rss
                       title: AP
-                      style: detailed-list
+                      style: vertical-list
                       limit: 50
                       collapse-after: 50
                       cache: 1h
