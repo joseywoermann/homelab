@@ -82,6 +82,8 @@ pages:
                         title: Adam Thiede's blog
                       - url: https://blog.wouterjanleys.com/rss/
                         title: Wouter Janleys
+                      - url: https://www.markpitblado.me/feed.xml
+                        title: Mark Pitblado
 
           - size: small
             widgets:
