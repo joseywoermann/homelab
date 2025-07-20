@@ -37,18 +37,18 @@ pages:
                       - title: Entertainment
                         color: 10 70 50
                         links:
-                            - title: YouTube
-                              url: https://www.youtube.com/
                             - title: Nebula
                               url: https://nebula.tv/
+                            - title: YouTube
+                              url: https://www.youtube.com/
                             - title: Jellyfin
                               url: https://jellyfin.home.josey.dev/
 
                       - title: Social
                         color: 200 50 50
                         links:
-                            - title: Reddit
-                              url: https://www.reddit.com/
+                            - title: Lemmy
+                              url: https://p.feddit.org/
                             - title: Mastodon
                               url: https://mastodon.social/
 
@@ -64,16 +64,12 @@ pages:
                 - type: rss
                   title: Blogs
                   style: detailed-list
-                  limit: 200
-                  collapse-after: 50
+                  limit: 25
+                  collapse-after: 10
                   cache: 1h
                   feeds:
-                      - url: https://rss.beehiiv.com/feeds/IDFzfYwUH1.xml
-                        title: Westenberg.
                       - url: https://www.jeffgeerling.com/blog.xml
                         title: Jeff Geerling
-                      - url: https://www.citationneeded.news/rss/
-                        title: "[citation needed]"
                       - url: https://xn--gckvb8fzb.com/index.xml
                         title: マリウス
                       - url: https://solar.lowtechmagazine.com/posts/index.xml
@@ -84,6 +80,8 @@ pages:
                         title: Wouter Janleys
                       - url: https://www.markpitblado.me/feed.xml
                         title: Mark Pitblado
+                      - url: https://drewdevault.com/blog/index.xml
+                        title: Drew DeVault's blog
 
           - size: small
             widgets:
@@ -185,40 +183,6 @@ pages:
                         - url: https://news.google.com/rss/search?q=when:24h+allinurl:apnews.com&hl=en-US&gl=US&ceid=US:en
                           title: AP News
 
-                    - type: reddit
-                      subreddit: worldnews
-                      show-thumbnails: true
-                      limit: 20
-                      collapse-after: 15
-                    - type: reddit
-                      subreddit: news
-                      show-thumbnails: true
-                      limit: 20
-                      collapse-after: 15
-                    - type: reddit
-                      subreddit: europe
-                      show-thumbnails: true
-                      limit: 20
-                      collapse-after: 15
-                    - type: reddit
-                      subreddit: de
-                      show-thumbnails: true
-                      limit: 20
-                      collapse-after: 15
-
-
-
-          - size: small
-            widgets:
-                - type: calendar
-                - type: stocks
-                  stocks:
-                      - symbol: VWCE.DE
-                        name: FTSE All-World
-                      - symbol: MEUD.PA
-                        name: Stoxx EU600
-                      - symbol: DAX
-                        name: DAX
 
     - name: Tech
       columns:
@@ -229,7 +193,7 @@ pages:
                   style: vertical-list
                   limit: 50
                   collapse-after: 20
-                  cache: 3h
+                  cache: 1h
                   feeds:
                       - url: https://www.gsmarena.com/rss-news-reviews.php3
                         title: GSMArena
@@ -249,15 +213,8 @@ pages:
                   channels:
                       - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
                       - UCzgA9CBrIXPtkB2yNTTiy1w # Level 2 Jeff
-                      - UC4w1YQAJMWOz4qtxinq55LQ # Level1Techs
-                      - UCv6J_jJa8GJqFwQNgNrMuww # ServeTheHome
-                      - UCHkYOD-3fZbuGhwsADBd9ZQ # Lawrence Systems
-                      - UCOk-gHyjcWZNj3Br4oxwh0A # Techno Tim
                       - UCXuqSBlHAE6Xw-yeJA0Tunw # LTT
-                      - UCp3yVOm6A55nx65STpm3tXQ # Craft Computing
-                      - UCgdTVe88YVSrOZ9qKumhULQ # Hardware Haven
                       - UCSOpcUkE-is7u7c4AkLgqTw # MrMobile
-                      - UCMiJRAwDNSNzuYeN2uWa0pA # MrWhosetheboss
                       - UCO2x-p9gg9TLKneXlibGR7w # Snazzy Labs
                       - UChIs72whgZI9w6d6FhwGGHA # GamersNexus
                       - UCRYOj4DmyxhBVrdvbsUwmAA # optimum
