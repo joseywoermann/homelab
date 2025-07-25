@@ -79,14 +79,6 @@
     | grafana.home.josey.dev | http://grafana:3000 |
     | jellyfin.home.josey.dev | http://jellyfin:8096 |
 
-### Grafana & InfluxDB
-
--   Currently only used to monitor my internet speed, no additional configuration aside from the docker compose needed
-
-### Speedtest
-
--   see above
-
 ### Glance
 
 -   New Tab Homepage
