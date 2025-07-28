@@ -207,6 +207,8 @@ pages:
                         title: GamersNexus
                       - url: https://noyb.eu/en/rss
                         title: noyb
+                      - url: https://www.404media.co/rss
+                        title: 404 Media
 
 
                 - type: videos
